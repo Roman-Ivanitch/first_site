@@ -1,10 +1,14 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    /* ширифт по умолчанию в body */
 
-    font-size: 15px;
+    font-size: 15px; 
+    /* рамер шрифта по умол */
     line-height: 1.6;
+    /* интервал */
     color: #333;
+    /* цвет страницы до загрзки картинки */
 }
 
 *,
@@ -20,35 +24,42 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 100%;
     max-width: 1800px;
+    /* размер сонтейнера */
     margin: 0 auto;
 }
 /* Шапка сайта */
 .header {
     width: 100%;
     padding-top: 30px;
+    /* отступ от верха сайта */
 
     position: absolute;
+    /* позиция на фоне */
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
 }
+
+/* позиция ссылок в шапке */
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/* название в шапке */
+/* название в шапке "Сайт" */
 .header__logo {
     font-size: 30px;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
+
+/* рамер ссылок в шапке */
 .nav {
     font-size: 14px;
     text-transform: uppercase;
 }
-/* ширифт в шапке */
+/* цвет и интервал ширифтов в шапке */
 .nav__link {
     display: inline-block;
     vertical-align: top;
@@ -60,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
     transition: color .1s linear;
 }
+/* полоска под ссылками в шапке */
 .nav__link:after {
     content: "";
     display: block;
@@ -76,6 +88,8 @@ h1, h2, h3, h4, h5, h6 {
 
     transition: opacity .1s linear;
 }
+
+/* смена цвета при наводке на ссылку */
 .nav__link:hover {
     color: #410a61;
 }
@@ -87,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #410a61;
 }
 
-
+/* Intro  фон сайта*/
 .intro {
     display: flex;
     flex-direction: column;
@@ -95,11 +109,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
 
-    background: url("../img/abram.jpg") center no-repeat;
+    background: url("../image/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
+/* положение текста  */
 .intro__inner {
     width: 100%;
     max-width: 880px;
@@ -108,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/* шрифт заголовка */
 .intro__title {
     color: #fff;
     font-size: 150px;
@@ -116,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+/* шрифт основного цвета */
 .intro__text {
     color: #fff;
     font-size: 20px;

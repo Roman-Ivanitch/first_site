@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
 
-    background: url("../img/roma.jpg") center no-repeat;
+    background: url("../image/roma.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
