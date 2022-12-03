@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    /* ширифт по умолчанию в body */
+
+    font-size: 15px; 
+    /* рамер шрифта по умол */
+    line-height: 1.6;
+    /* интервал */
+    color: #333;
+    /* цвет страницы до загрзки картинки */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* Container  разметка станицы, пропорция делящая страницу на 4 секции*/
+.container {
+    width: 100%;
+    max-width: 1800px;
+    /* размер сонтейнера */
+    margin: 0 auto;
+}
+/* Шапка сайта */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    /* отступ от верха сайта */
+
+    position: absolute;
+    /* позиция на фоне */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* позиция ссылок в шапке */
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* название в шапке "Сайт" */
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+/* рамер ссылок в шапке */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/* цвет и интервал ширифтов в шапке */
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+/* полоска под ссылками в шапке */
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #410a61;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+/* смена цвета при наводке на ссылку */
+.nav__link:hover {
+    color: #410a61;
+}
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+.nav__link.active {
+    color: #410a61;
+}
+
+/* Intro  фон сайта*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../img/intro.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* положение текста  */
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+/* шрифт заголовка */
+.intro__title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* шрифт основного цвета */
+.intro__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    line-height: 1.6;
+}
