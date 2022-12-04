@@ -123,3 +123,95 @@ h1, h2, h3, h4, h5, h6 {
     /* text-transform: uppercase; */
     line-height: 1.6;
 }
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+
+    background: url("../image/social_network.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.services__inner {
+    width: 100%;
+    /* max-width: 880px; */
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* height: 100vh; */
+    
+    background: url("../image/services.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.social__text {
+    text-align: left; 
+    margin: 20px;
+}
+
+.Iam {
+    /* width: 100%; */
+    /* max-width: 880px; */
+    margin: 20px;
+    /* width: 20vh; */
+    height: 20vh;
+    text-align: right; 
+    z-index: 2; 
+} 
+
+.icons {
+    /* align: left; */
+    text-align: left;
+    width: 20vh;
+    /* height: 20vh; */
+    z-index: 1;
+}
+
+
+/* это дал фотошоп, не придумал как использовать кроме как фона
+.VK {
+    background-image: url("../icons/VK.png");
+    position: center;
+
+    /* left: 256px;
+    top: 303px; 
+
+    width: 100%;
+    height: 130px;
+    z-index: 3;
+  }
+  .github {
+    /* background-image: url("../image/github.png"); 
+    position: left;
+
+    /* left: 531px;
+    top: 172px; */
+
+    /* width: 130px;
+    height: 130px;
+    z-index: 4; 
+  }
+  .TG {
+    /* background-image: url("../image/TG.png"); 
+    position: left;
+
+    /* left: 447px;
+    top: 357px;
+
+    width: 130px;
+    height: 130px;
+    z-index: 2; 
+  }
+   */
