@@ -1,4 +1,4 @@
-from flask import * 
+from flask import Flask, render_template, url_for, send_file 
 # Flask, render_template, url_for, send_file
 
 app = Flask(__name__)
@@ -9,6 +9,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/alekseevsk')
+def alek():
+    return render_template('alekseevsk.html') 
+
+
 @app.route('/abram')
 def abran():
     return render_template('abram.html')   
@@ -17,11 +22,6 @@ def abran():
 @app.route('/ivanitch')
 def ivan():
     return render_template('ivanitch.html')  
-
-
-@app.route('/alekseevsk')
-def alek():
-    return render_template('alekseevsk.html') 
 
 
 if __name__ == "__main__":
